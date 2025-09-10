@@ -35,7 +35,60 @@ width:80%;
 margin:20px auto;
 border:2px solid navy;
 }
+.table-style1 th, .table-style1 td{
+border: 1px solid navy;
+padding: 10px;
+text-align: center;
+}
+.table-style1 th {
+background-color: lightblue;
+}
+.table-style2{
+width:60%;
+margin:20px auto;
+border-collapse: collapse;
+border:2px solid darkgreen;
+}
+.table-style2 th, .table-style2 td{
+border: 1px solid darkgreen;
+padding: 10px;
+text-align: center;
+}
+.table-style2 th {
+background-color: lightgreen;
+}
+.about {
+width:60%;
+margin:20px auto;
+text-align: left;
+}
 
+div.mycontainer{
+width:66%;
+overflow:auto;
+}
+div.mycontainer div{
+width:50%;
+float:left;
+}
+.video{
+width:56%;
+margin: 10px auto;
+text-align: center;
+border:3px solid green;
+}
+.list-style1{
+list-style-type: square;
+color: darkblue;
+text-align:left;
+margin:20px;
+}
+.list-style2{
+list-style-type: circle;
+color: darkgreen;
+text-align:left;
+margin:20px;
+}
 </style>
 
   </head>
@@ -49,17 +102,17 @@ I have two dogs and a cat
 Location: Kansas City
 </pre>
     </header>
-<section>
+<section class="about">
 <p> Check out my favorite website: 
 <a href="https://ribblr.com/home?"target="_blank">Crochet Patterns</a>
 </p>
 <a href="j80091466@gmail.com"target="_blank">Email Me</a>
 <a href="https://www.foodnetwork.com/"target="_blank">
-<img src="https://github.com/lonafamilia3-glitch/Pitsandboxers/blob/main/front%20db%20bi.jpg?raw=true"alt="Me!!!"></a>
+<img src="https://github.com/lonafamilia3-glitch/Pitsandboxers/blob/main/front%20db%20bi.jpg?raw=true"alt="Me!!!" title="Click here for my favorite receipe"></a>
 </section>
 <hr>
 <h2>My Hobbies</h2>
-<table>
+<table class="table-style1">
 <tr>
 <th>Hobby</th>
 <th>hours/week</th>
@@ -74,7 +127,7 @@ Location: Kansas City
  </tr>
 </table>
 <h2>My Favorite Movies</h2>
-<table>
+<table class="table-style2">
 <tr>
 <th>Movie</th>
 <th>Year</th>
@@ -88,19 +141,25 @@ Location: Kansas City
 <td>1992</td>
 </tr>
 </table>
+<div class= "mycontainer">
+<div>
 <h2>My Favorite Foods</h2>
-<ul>
+<ul class="list-style1">
 <li>Sushi</li>
 <li>Pizza</li>
 <li>Tacos</li>
 </ul>
+</div>
+<div>
 <h2>My Favorite Drink</h2>
-<ul>
+<ul class="list-style2">
 <li>Jamaica</li>
 <li>Green Tea</li>
 <li>Espresso</li>
-</ul>  
-<section>
+</ul>
+</div>
+</div>  
+<section class="video">
 <h2> My Favorite Video</h2>
 <video width="480" height="360" controls>
 <source src="https://github.com/lonafamilia3-glitch/Pitsandboxers/blob/main/Cats%20Video.mp4?raw=true">
@@ -108,6 +167,5 @@ Your browser does not support the video tag.
 </video>
 </section>
 <h2>Embedded Website</h2>
-<iframe width="1015" height="571" src="https://www.youtube.com/embed/mLwlGsRhNIU?list=PLGoWuvyH709vpTCVrjaJtaaFfite9U6u8"></iframe>
-  </body>
+<iframe width="1015" height="571" src="https://www.youtube.com/embed/mLwlGsRhNIU?list=PLGoWuvyH709vpTCVrjaJtaaFfite9U6u8"></iframe></body>
 </html>
